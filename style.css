@@ -1,0 +1,498 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  header {
+    background-color: #004d7a;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #004d7a;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  h2, h3 {
+    color: #004d7a;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+  
+  footer {
+    background-color: #004d7a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+
+  /*tabela */
+  table {
+    border-collapse: collapse;
+    width: 100%; /* Ajusta a largura para ocupar 100% do espaço dentro da div */
+    margin: 10px;
+    background-color: #2e7197; /* Fundo amarelo claro */
+    border: 3px solid #004d7a; /* Borda dourada */
+  }
+  
+  th, td {
+    border: 1px solid #004d7a; /* Borda dourada */
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4c9cca; /* Laranja claro */
+    color: white; /* Nome dos países e estados em branco */
+  }
+  
+  td {
+    background-color: #fff; /* Fundo branco para as células */
+  }
+
+  .tabela {
+    width: 45%; /* Cada tabela ocupará 45% da largura da área disponível */
+  }
+
+  .tabelas-container {
+    display: flex;
+    justify-content: center; /* Centraliza as tabelas na página */
+    gap: 30px; /* Adiciona um espaçamento entre as tabelas */
+    margin: 20px;
+  }
+
+  /* podcast */
+  .podcast-info .info-box {
+    background-color: #cde5f7;
+    border: 2px solid #004080;
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    max-width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .podcast-info .info-box::before {
+    content: "🎧 ZPEs: características e funções";
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    background-color: #004080;
+    color: #ffffff;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .podcast-info .info-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  
+  .podcast-info .info-box audio {
+    width: 100%;
+    margin-top: 1rem;
+    outline: none;
+  }
+  
+  
+
+  /* titulo */
+
+  .titulo-principal {
+    font-size: 2.8rem;
+    color: #004d7a;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+
+  
+ 
+/* um dia foi audio */
+.zpe-info .info-box {
+    background-color:#cde5f7;
+    border: 2px solid #004080;
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    max-width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .zpe-info .info-box::before {
+    content: "Quais são as zonas de processamento de exportação do Brasil? Quais suas funções?";
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    background-color: #004080;
+    color: #ffffff;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .zpe-info .info-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+ /* mapa mental*/
+ .mapa-mental-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 4rem auto;
+    max-width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .mapa-mental-vertical .nodo {
+    background-color: #f0f8ff;
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mapa-mental-vertical .nodo.raiz {
+    background-color: #004d7a;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-color: #00345a;
+  }
+  
+  .mapa-mental-vertical .nodo h3 {
+    margin-top: 0;
+    color: #004080;
+    font-size: 1.2rem;
+  }
+  
+  .mapa-mental-vertical .nodo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0 0 0;
+    color: #333;
+  }
+  
+  .mapa-mental-vertical .linha {
+    width: 4px;
+    height: 40px;
+    background-color: #0073e6;
+    margin: 0.5rem 0;
+  }
+  
+  /* segundo mapa talvez? */
+  .mapa-mental-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 4rem auto;
+    max-width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .mapa-mental-vertical .nodo {
+    background-color: #f0f8ff;
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mapa-mental-vertical .nodo.raiz {
+    background-color: #004d7a;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-color: #00345a;
+  }
+  
+  .mapa-mental-vertical .nodo h3 {
+    margin-top: 0;
+    color: #004080;
+    font-size: 1.2rem;
+  }
+  
+  .mapa-mental-vertical .nodo p,
+  .mapa-mental-vertical .nodo ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .mapa-mental-vertical .nodo ul {
+    margin: 0.5rem 0 1rem 1.2rem;
+    padding-left: 1rem;
+    list-style-type: disc;
+  }
+  
+  .mapa-mental-vertical .linha {
+    width: 4px;
+    height: 40px;
+    background-color: #0073e6;
+    margin: 0.5rem 0;
+  }
+  
+
+
+  /* o fim tecnicamente, q esta me incomodando */
+
+  .dados-migracao h2 {
+    color: #004d7a;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #cde5f7;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .info-box {
+    background-color: #ffffff;
+    border-left: 5px solid #4c9cca;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    line-height: 1.6;
+    transition: transform 0.2s ease;
+  }
+  
+  .info-box:hover {
+    transform: scale(1.01);
+  }
+  
+  .info-box p {
+    font-size: 1.05rem;
+    color: #333;
+  }
+  
+  /* imagem do mapa */
+  .imagem-galeria {
+    display: block;
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    border: 3px solid #004d7a;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* acnur */
+  .acnur-secao .info-box {
+    background-color: #cde5f7;
+    border: 2px solid #004080;
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    max-width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+  }
+  
+  .acnur-secao .info-box::before {
+    content: "Agências Especializadas da ONU";
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    background-color: #004080;
+    color: #ffffff;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .acnur-secao .info-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+
+  /* segunda parte do acnur*/
+  .acnur-secao .info-box {
+    background-color: #cde5f7;
+    border: 2px solid #004080;
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    max-width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+  }
+  
+  /* Título personalizado para cada bloco via atributo data-label */
+  .acnur-secao .info-box::before {
+    content: attr(data-label);
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    background-color: #004080;
+    color: #ffffff;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .acnur-secao .info-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  
+  .acnur-secao .conteudo {
+    margin-top: 1.5rem;
+  }
+  
+  .acnur-secao .galeria-imagens {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .acnur-secao .galeria-imagens img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* tste do testge*/
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+  }
+  .central {
+    text-align: center;
+    margin: 0 20px;
+    padding: 20px 30px;
+    background: #0073e6;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.5);
+  }
+  .branches {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    justify-content: center;
+    width: 100%;
+  }
+  .branch {
+    background: #004d7a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 120px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 0 6px rgba(0, 77, 122, 0.6);
+  }
+  .line {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    border-left: 2px solid #0073e6;
+    margin: 0 auto;
+  }
+  
+  
